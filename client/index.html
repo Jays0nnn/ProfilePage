@@ -1,0 +1,30 @@
+<!doctype>
+<html ng-app="myApp">
+<head>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<body ng-controller="mainCtrl as main">
+		<div class="nav" layout="row" layout-align="start center" ng-cloak>
+
+			
+
+    			<md-button ui-sref="home">Home</md-button>
+    			<md-button ui-sref="about">About</md-button>
+    			<md-button ui-sref="blog">Blog</md-button>
+
+		</div>
+
+
+
+		<ui-view></ui-view>
+
+		
+
+
+	<script type="text/javascript" src="build/js/vendors.js"></script>
+	<script src="https://use.fontawesome.com/18d39c6cba.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>

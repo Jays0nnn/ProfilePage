@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Din';
+  src: url("../assets/fonts/UtopiaStd-Semibold.otf"); }
+body {
+  margin: 0em 2em;
+  position: relative; }
+
+.nav {
+  font-family: 'Din';
+  margin: 3em 0em; }
+
+.container {
+  width: 100%;
+  font-family: 'Din';
+  margin-top: 3em; }
+  .container h1 {
+    font-size: 5.5em;
+    display: block;
+    margin-left: .3em; }
+
+.nav md-content {
+  font-size: 2em; }
+
+.about {
+  margin: 0em 4em;
+  line-height: 2em;
+  font-size: 2em;
+  font-family: "Din"; }
+
+.works, .icons {
+  margin-top: 9em;
+  margin-left: 1em; }
+
+.about img {
+  margin-left: 10em;
+  width: 30%;
+  padding-bottom: 5em;
+  padding-top: 2em; }
+
+.works {
+  margin: 8em 0 0 0em; }
+
+.works md-content {
+  font-family: 'Din';
+  margin: 0 0 0 .5em;
+  font-size: 2em; }
+
+.icons i {
+  margin: 0em 0em 0 .5em;
+  font-size: 2em; }
+
+.images h1 {
+  padding: 1em; }
+
+.images {
+  text-align: center;
+  margin-top: 1.5em; }
+
+/*# sourceMappingURL=style.css.map */
