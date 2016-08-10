@@ -5,23 +5,24 @@
 	<link rel="stylesheet" href="bower_components/angular-material/angular-material.css"/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
-	<body ng-controller="mainCtrl as main">
-		<div class="nav" layout="row" layout-align="start center" ng-cloak>
+	<body ng-controller="navCtrl as main">
+
+		<div class="container">
+		<div class="nav" layout="row" layout-align="center center" ng-cloak>
 
 			
 
     			<md-button ui-sref="home">Home</md-button>
     			<md-button ui-sref="about">About</md-button>
-    			<md-button ui-sref="blog">Blog</md-button>
+    			<md-button ui-sref="resume">Resume</md-button>
 
 		</div>
 
-
-
 		<ui-view></ui-view>
 
-		
 
+
+		</div>
 
 	<script type="text/javascript" src="build/js/vendors.js"></script>
 	<script src="https://use.fontawesome.com/18d39c6cba.js"></script>

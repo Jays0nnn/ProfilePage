@@ -1,4 +1,3 @@
-/server/node_modules
-/comp/node_modules
-/client/bower_components
-/client/build/js/vendors.js
+node_modules
+bower_components
+vendors.js
