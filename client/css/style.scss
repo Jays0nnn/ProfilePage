@@ -17,105 +17,98 @@
 	}
 }
 
-body {
-
-	
-	position: relative;
-	text-align: center;
-
-
-}
-
 
 
 .nav  {
 
-	font-family: 'Din';
-	margin: 3em 0em;
-	animation: fadeIn 1.5s;
+	display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 34%;
+    float: left;
+    text-align: center;
+  	margin: .1em 2em 0em 1em;
+
+	h3 {
+		font-size: 1em;
+		margin: 0;
+
+	}
+
+	h3, h1 {
+
+	animation: fadeIn 2s;
+
+	}
+
+	.icons {
+
+		font-size: 1.2em;
+		margin-top: 2em;
+
+		i {
+
+			margin: .2em;
+		}
+
+	}
+
 }
+
 
 .container {
 
-	width: 100%;
-	font-family: 'Din';
-	margin-top: 7em;
-
-
-	.home h1 {
-
-		font-size: 2.5em;
-    	display: block;
-    	margin: 3em 4em;
-
-	}
-	
-}
-
-
-.about {
-
-	display: flex;
-	flex-direction: row;
-
-	.boxo h1 {
-
-		font-size: 1em;
-			
-	}
-	.boxt h1 {
-
-		font-size: 1em;
-			
-	}
-
-}
-
-
-.nav md-content {
-
-	font-size: 2em;
-}
-
-
-.works,.icons {
-
-	margin-top: 9em;
-	margin-left: 1em;
-
-}
-
-
-
-
-.works {
-
-	margin: 8em 0 0 0em;
-}
-.works md-content {
-
-	font-family: 'Din';
-	margin: 0 0 0 .5em;
-	font-size: 2em;
-}
-.icons i {
-
-
-	margin: 0em 0em 0 .5em;
-	font-size: 2em;
-}
-
-.images h1 {
-
-	padding: 1em;
-}
-
-
-
-.images {
-
-
 	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 3em;
+	font-weight: bold;
 
-	margin-top: 1.5em;
+
+
+	.home {
+
+	
+		width: 40%;
+		height: 40%;
+		margin: .5em;
+	
+		.text {
+
+			margin-top: 3em;
+		}
+	
+	}
+
+	.about {
+
+		
+		width: 40%;
+		height: 40%;
+		margin: .5em;
+	
+		
+
+		}
+
+	.resume {
+
+		width: 40%;
+		margin: .5em;
+		height: 40.5%;
+	
+
+	}
+
+	.last {
+
+		
+		width: 40%;
+		margin: .5em .5em 0 .5em;
+		height: 40.5%;
+
+
 }
+}
+
+

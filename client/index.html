@@ -7,22 +7,33 @@
 </head>
 	<body ng-controller="navCtrl as main">
 
+		
+			<head-dir></head-dir ng-cloak>
+
+
+
 		<div class="container">
-		<div class="nav" layout="row" layout-align="center center" ng-cloak>
 
-			
+		
 
-    			<md-button ui-sref="home">Home</md-button>
-    			<md-button ui-sref="about">About</md-button>
-    			<md-button ui-sref="resume">Resume</md-button>
+				<md-whiteframe class="home md-whiteframe-2dp" ui-sref="home" layout="row" layout-align="center center">Lutt Shoe Shine</md-whiteframe>
+    			<md-whiteframe class="about md-whiteframe-2dp" ui-sref="about" layout="row" layout-align="center center">Brick & Ivy</md-whiteframe>
+    			<md-whiteframe class="resume md-whiteframe-2dp" ui-sref="resume" layout="row" layout-align="center center">East Side Fitness Athletics</md-whiteframe>
+    			<md-whiteframe class="last md-whiteframe-2dp" ui-sref="resume" layout="row" layout-align="center center">Free People</md-whiteframe>
+
+
+
+		<ui-view>
+
+
+		</ui-view>
+
 
 		</div>
 
-		<ui-view></ui-view>
 
 
-
-		</div>
+		
 
 	<script type="text/javascript" src="build/js/vendors.js"></script>
 	<script src="https://use.fontawesome.com/18d39c6cba.js"></script>
