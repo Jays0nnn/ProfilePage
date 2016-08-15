@@ -29,6 +29,14 @@ app.directive('headDir', function() {
 	};
 });
 
+app.directive('navDir', function() {
+
+	return {
+
+		restrict: 'E',
+		templateUrl: 'templates/content.html'
+	};
+});
 
 
 app.controller('navCtrl', function(nav) {

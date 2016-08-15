@@ -18,6 +18,22 @@
 }
 
 
+@keyframes slideIn {
+	
+	0% {
+
+	padding: 0.5em 0em;
+
+	}
+
+	100% {
+
+	padding: 0.5em 1em;
+
+	}
+
+}
+
 
 .nav  {
 
@@ -56,6 +72,8 @@
 }
 
 
+
+
 .container {
 
 	text-align: center;
@@ -66,17 +84,27 @@
 
 
 
+
+	h4 {
+
+		border-bottom: dotted 1px black;
+		padding-bottom: .5em;
+	}
+
+	h3 {
+
+		display: none;
+
+	}
+
 	.home {
 
 	
 		width: 40%;
 		height: 40%;
 		margin: .5em;
-	
-		.text {
-
-			margin-top: 3em;
-		}
+		cursor: pointer;
+		border-radius: .4em;
 	
 	}
 
@@ -86,8 +114,8 @@
 		width: 40%;
 		height: 40%;
 		margin: .5em;
-	
-		
+		cursor: pointer;
+		border-radius: .4em;
 
 		}
 
@@ -96,6 +124,8 @@
 		width: 40%;
 		margin: .5em;
 		height: 40.5%;
+		cursor: pointer;
+		border-radius: .4em;
 	
 
 	}
@@ -106,9 +136,129 @@
 		width: 40%;
 		margin: .5em .5em 0 .5em;
 		height: 40.5%;
+		cursor: pointer;
+		border-radius: .4em;
 
+	}
 
 }
+
+
+
+.home:hover {
+	
+	background: url('../assets/thing.png') no-repeat;
+	background-size: 90%;
+    background-position: 50% 50%;
+	animation: fadeIn 1s;
+
+	
+
+	 h4 {
+
+	 	display: none;
+	 }
+
+	 h3 {
+
+	 	display: inline;
+	 	background: white;
+	 	position: absolute;
+	 	top: 14em;
+    	left: 22.5em;
+    	animation: slideIn .5s;
+    	padding: .5em 1em;
+
+	 }
 }
+
+.about:hover {
+	
+	background: url('../assets/Brick.png') no-repeat;
+	background-size: 100%;
+    background-position: 0% 50%;
+	animation: fadeIn 1s;
+
+	 h4 {
+
+	 	display: none;
+
+
+	 }
+
+	 h3 {
+
+	 	display: inline;
+	 	background: white;
+	 	position: absolute;
+	 	top: 14em;
+    	left: 40.1em;
+    	animation: slideIn .5s;
+    	padding: .5em 1em;
+
+	 }
+}
+
+.resume:hover {
+	
+	background: url('../assets/Fit.png') no-repeat;
+	background-size: 90%;
+    background-position: 50% 50%;
+	animation: fadeIn 1s;
+
+	 h4 {
+
+	 	display: none;
+
+	 }
+
+	 h3 {
+
+	 	display: inline;
+	 	background: white;
+	 	position: absolute;
+	 	top: 29.5em;
+    	left: 22.5em;
+    	animation: slideIn .5s;
+    	padding: .5em 1em;
+	 }
+}
+
+.last:hover {
+	
+
+	background: url('../assets/Free.jpg') no-repeat ;
+	background-size: 100%;
+    background-position: 0% 0%;
+	animation: fadeIn 1s;
+		padding: .5em 1em;
+
+
+	 h4 {
+
+	 	display: none;
+
+
+
+	 
+	 }
+
+	 h3 {
+
+	 	display: inline;
+	 	background: white;
+	 	position: absolute;
+	 	top: 29.5em;
+    	left: 40.1em;
+    	animation: slideIn .5s;
+    	padding: .5em 1em;
+	 }
+
+}
+
+
+
+
+
 
 
