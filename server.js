@@ -4,10 +4,10 @@ var path = require('path');
 var PORT = process.env.PORT || 8000;
 
 
-var main = app.use('/', express.static('/client'));
+var main = app.use('/', express.static('client'));
 
 app.get('/', function(req,res) {
-	res.sendFile(path.join(__dirname +'/index.html'));
+	res.sendFile(path.join(__dirname +'/client/index.html'));
 });
 
 // app.get('/about', function(req, res) {
