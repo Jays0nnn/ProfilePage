@@ -35,6 +35,7 @@
 }
 
 
+
 .nav  {
 
 	display: flex;
@@ -74,26 +75,43 @@
 
 
 
-.container {
+
+.container { 
 
 	text-align: center;
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 3em;
 	font-weight: bold;
+	justify-content: flex-start;
 
+	md-content {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+
+	}
+
+	cont-dir {
+
+	width: 100%;
+
+	}
 
 
 
 	h4 {
 
-		border-bottom: dotted 1px black;
-		padding-bottom: .5em;
+		display: inline;
 	}
 
 	h3 {
 
 		display: none;
+		
+	 	
 
 	}
 
@@ -151,6 +169,7 @@
 	background-size: 90%;
     background-position: 50% 50%;
 	animation: fadeIn 1s;
+	
 
 	
 
@@ -163,9 +182,6 @@
 
 	 	display: inline;
 	 	background: white;
-	 	position: absolute;
-	 	top: 14em;
-    	left: 22.5em;
     	animation: slideIn .5s;
     	padding: .5em 1em;
 
@@ -179,6 +195,7 @@
     background-position: 0% 50%;
 	animation: fadeIn 1s;
 
+
 	 h4 {
 
 	 	display: none;
@@ -190,12 +207,9 @@
 
 	 	display: inline;
 	 	background: white;
-	 	position: absolute;
-	 	top: 14em;
-    	left: 40.1em;
     	animation: slideIn .5s;
     	padding: .5em 1em;
-
+    	
 	 }
 }
 
@@ -216,9 +230,6 @@
 
 	 	display: inline;
 	 	background: white;
-	 	position: absolute;
-	 	top: 29.5em;
-    	left: 22.5em;
     	animation: slideIn .5s;
     	padding: .5em 1em;
 	 }
@@ -231,7 +242,7 @@
 	background-size: 100%;
     background-position: 0% 0%;
 	animation: fadeIn 1s;
-		padding: .5em 1em;
+	padding: .5em 1em;
 
 
 	 h4 {
@@ -247,9 +258,6 @@
 
 	 	display: inline;
 	 	background: white;
-	 	position: absolute;
-	 	top: 29.5em;
-    	left: 40.1em;
     	animation: slideIn .5s;
     	padding: .5em 1em;
 	 }

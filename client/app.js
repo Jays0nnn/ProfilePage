@@ -29,7 +29,7 @@ app.directive('headDir', function() {
 	};
 });
 
-app.directive('navDir', function() {
+app.directive('contDir', function() {
 
 	return {
 
