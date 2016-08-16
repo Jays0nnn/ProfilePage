@@ -44,8 +44,13 @@
     align-content: flex-start; }
   .container cont-dir {
     width: 100%; }
+  .container .home h4 {
+    padding: 0 6em; }
+  .container .last h3 {
+    margin: 0em -.85em; }
   .container h4 {
-    display: inline; }
+    display: inline;
+    padding: 0 5em; }
   .container h3 {
     display: none; }
   .container .home {
