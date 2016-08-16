@@ -12,7 +12,8 @@ module.exports = function(grunt) {
 			// vendors_js: {
 			// 	src: ['../client/bower_components/angular/angular.min.js','../client/bower_components/angular-animate/angular-animate.min.js',
 			// 		  '../client/bower_components/angular-aria/angular-aria.min.js', '../client/bower_components/angular-material/angular-material.min.js',
-			// 		  '../client/bower_components/angular-messages/angular-messages.min.js','../client/bower_components/angular-ui-router/release/angular-ui-router.min.js'],
+			// 		  '../client/bower_components/angular-messages/angular-messages.min.js','../client/bower_components/angular-ui-router/release/angular-ui-router.min.js',
+			// 		  '../client/bower_components/jquery/dist/jquery.min.js'],
 			// 	dest: '../client/build/js/vendors.js'
 			// }
 		},
