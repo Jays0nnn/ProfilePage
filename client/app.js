@@ -18,21 +18,25 @@ app.config(function($stateProvider, $urlRouterProvider){
 
 });
 
-// app.animation('.home', function(){
-// 	return {
-// 		enter: function (home , done) {
 
-// 		}
+app.directive('headDir', function($parse) {
 
-// 	};
-// });
+	function introFunction (scope,elem,attr) {
 
-app.directive('headDir', function() {
+		// var obj = $parse(attr.headDir);
+		// console.log(obj);
+
+		elem.bind('load', function(){
+			console.log('woo it works!');
+		
+		});
+	}
 
 	return {
 
 		restrict: 'E',
-		templateUrl: 'templates/head.html'
+		templateUrl: 'templates/head.html',
+		link: introFunction
 
 	};
 });
@@ -42,38 +46,23 @@ app.directive('contDir', function() {
 	return {
 
 		restrict: 'E',
-		templateUrl: 'templates/content.html'
+		templateUrl: 'templates/content.html',
+		link: function(scope,elem,attr){
+			elem.bind('click', function(){
+				console.log('sofarsogood');
+				// $(this).replaceWith('.test');
+				// $(".home").addClass("test");
+				$(".home").click(function(){
+					// elem.bind('click', function(){
+					// 	console.log('thisworks!');
+					// })
+					$('.about').slideUp('moderate');
+
+				});
+			});
+		}
 	};
 });
 
-
-app.controller('navCtrl', function(nav) {
-
-	var obj = this;
-
-	
-
-	
-});
-
-
-
-
-
-app.service('nav', function () {
-
-
-
-});
-
-
-// app.directive('navDir', function () {
-
-// 	return {
-// 		restrict : 'E',
-// 		controller : 'navCtrl',
-// 		templateUrl : 'templates/icon.html'
-// 	};
-// });
 
 

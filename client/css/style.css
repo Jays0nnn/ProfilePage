@@ -6,11 +6,21 @@
     opacity: 0; }
   to {
     opacity: 1; } }
+@keyframes slideUp {
+  from {
+    top: 0;
+    left: 0; }
+  to {
+    top: 100px;
+    left: 100px; } }
 @keyframes slideIn {
   0% {
     padding: 0.5em 0em; }
   100% {
     padding: 0.5em 1em; } }
+.test {
+  animation: slideUp .5s; }
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -29,9 +39,6 @@
     margin-top: 2em; }
     .nav .icons i {
       margin: .2em; }
-
-.color {
-  color: red; }
 
 .container {
   text-align: center;
@@ -53,9 +60,11 @@
     margin: 0em -.85em; }
   .container h4 {
     display: inline;
-    padding: 0 5em; }
+    padding: 0 5em;
+    font-size: 1.4em; }
   .container h3 {
-    display: none; }
+    display: none;
+    font-size: 2em; }
   .container .home {
     width: 40%;
     height: 40%;

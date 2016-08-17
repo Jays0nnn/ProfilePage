@@ -17,6 +17,14 @@
 	}
 }
 
+@keyframes slideUp {
+	
+	
+		 from { top: 0; left: 0; }
+		 to   { top: 100px; left: 100px; }
+
+}
+
 
 @keyframes slideIn {
 	
@@ -34,7 +42,10 @@
 
 }
 
-
+.test{
+	
+	animation: slideUp .5s;
+}
 
 .nav  {
 
@@ -73,10 +84,7 @@
 }
 
 
-.color {
-	
-	color: red;
-}
+
 
 
 .container { 
@@ -117,11 +125,13 @@
 
 		display: inline;
 		padding: 0 5em;
+		font-size: 1.4em;
 	}
 
 	h3 {
 
 		display: none;
+		font-size: 2em;
 
 	}
 
