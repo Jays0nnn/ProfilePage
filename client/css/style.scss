@@ -4,29 +4,7 @@
 	src: url('../assets/fonts/UtopiaStd-Semibold.otf');
 }
 
-@keyframes fadeIn {
-	
-	from {
-
-	opacity: 0;
-	}
-	to {
-
-	opacity: 1;
-
-	}
-}
-
-@keyframes slideUp {
-	
-	
-		 from { top: 0; left: 0; }
-		 to   { top: 100px; left: 100px; }
-
-}
-
-
-@keyframes slideIn {
+@keyframes label {
 	
 	0% {
 
@@ -42,9 +20,47 @@
 
 }
 
-.test{
+
+@keyframes fadeIn {
 	
-	animation: slideUp .5s;
+	from {
+
+	opacity: 0;
+	}
+	to {
+
+	opacity: 1;
+
+	}
+}
+
+@keyframes slide {
+	
+	from {
+
+	left: -25em;
+
+	}
+	to {
+
+	left: 0;
+
+	}
+		
+}
+
+@keyframes slideUp {
+	
+	from {
+
+	top: 50em;
+
+	}
+
+	to {
+
+	top : 0em;
+	}
 }
 
 .nav  {
@@ -52,20 +68,17 @@
 	display: flex;
     flex-direction: column;
     width: 30%;
-    height: 34%;
+    height: 50%;
+    position: fixed;
+    z-index: 1;
     float: left;
     text-align: center;
-  	margin: .1em 2em 0em 1em;
+  	margin: 12em 2em 0em 1em;
+  	animation: slide .7s;
 
 	h3 {
 		font-size: 1em;
 		margin: 0;
-
-	}
-
-	h3, h1 {
-
-	animation: fadeIn 2s;
 
 	}
 
@@ -92,9 +105,11 @@
 	text-align: center;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 3em;
+	padding-top: 1em;
 	font-weight: bold;
 	justify-content: flex-start;
+
+
 
 	md-content {
 
@@ -103,6 +118,34 @@
 	flex-wrap: wrap;
 	align-content: flex-start;
 
+
+		pro1,pro2,pro3,pro4 {
+
+			width: 100%;
+    		margin: .5em;
+    		position: relative;
+    		top: 0;
+			
+		}
+
+		pro1 {
+
+			animation: slideUp .4s;
+		}
+		pro2 {
+
+			animation: slideUp .7s;
+		}
+
+		pro3 {
+
+			animation: slideUp 1s;
+		}
+
+		pro4 {
+
+			animation: slideUp 1.2s;
+		}
 	}
 
 	cont-dir {
@@ -114,7 +157,7 @@
 
 	.home h4 {
 
-		padding: 0 6em;
+		padding: 0 6.5em;
 	}
 
 	.last h3 {
@@ -124,8 +167,8 @@
 	h4 {
 
 		display: inline;
-		padding: 0 5em;
-		font-size: 1.4em;
+		padding: 0 6em;
+		font-size: 2.3em;
 	}
 
 	h3 {
@@ -138,32 +181,41 @@
 	.home {
 
 	
-		width: 40%;
-		height: 40%;
-		margin: .5em;
+		width: 65%;
+    	height: 40%;
+    	margin: .5em 1em;
 		cursor: pointer;
 		border-radius: .4em;
-	
+		
+		position: relative;
+    	top: 0;
 	}
 
 	.about {
 
 		
-		width: 40%;
-		height: 40%;
-		margin: .5em;
+		width: 65%;
+    	height: 40%;
+    	margin: .5em 1em;
 		cursor: pointer;
 		border-radius: .4em;
+		position: relative;
+		
+		top: 0;
 
 		}
 
 	.resume {
 
-		width: 40%;
-		margin: .5em;
-		height: 40.5%;
+		width: 65%;
+    	height: 40%;
+    	margin: .5em 1em;
 		cursor: pointer;
 		border-radius: .4em;
+		position: relative;
+		
+		top: 0;
+
 	
 
 	}
@@ -171,11 +223,14 @@
 	.last {
 
 		
-		width: 40%;
-		margin: .5em .5em 0 .5em;
-		height: 40.5%;
+		width: 65%;
+    	height: 40%;
+    	margin: .5em 1em;
 		cursor: pointer;
 		border-radius: .4em;
+		position: relative;
+		
+		top: 0;
 
 	}
 
@@ -202,7 +257,7 @@
 
 	 	display: inline;
 	 	background: white;
-    	animation: slideIn .5s;
+    	animation: label .5s;
     	padding: .5em 1em;
 
 	 }
@@ -227,7 +282,7 @@
 
 	 	display: inline;
 	 	background: white;
-    	animation: slideIn .5s;
+    	animation: label .5s;
     	padding: .5em 1em;
     	
 	 }
@@ -250,7 +305,7 @@
 
 	 	display: inline;
 	 	background: white;
-    	animation: slideIn .5s;
+    	animation: label .5s;
     	padding: .5em 1em;
 	 }
 }
@@ -278,7 +333,7 @@
 
 	 	display: inline;
 	 	background: white;
-    	animation: slideIn .5s;
+    	animation: label .5s;
     	padding: .5em 1em;
 	 }
 

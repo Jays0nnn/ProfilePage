@@ -1,39 +1,40 @@
 @font-face {
   font-family: 'Din';
   src: url("../assets/fonts/UtopiaStd-Semibold.otf"); }
+@keyframes label {
+  0% {
+    padding: 0.5em 0em; }
+  100% {
+    padding: 0.5em 1em; } }
 @keyframes fadeIn {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
+@keyframes slide {
+  from {
+    left: -25em; }
+  to {
+    left: 0; } }
 @keyframes slideUp {
   from {
-    top: 0;
-    left: 0; }
+    top: 50em; }
   to {
-    top: 100px;
-    left: 100px; } }
-@keyframes slideIn {
-  0% {
-    padding: 0.5em 0em; }
-  100% {
-    padding: 0.5em 1em; } }
-.test {
-  animation: slideUp .5s; }
-
+    top: 0em; } }
 .nav {
   display: flex;
   flex-direction: column;
   width: 30%;
-  height: 34%;
+  height: 50%;
+  position: fixed;
+  z-index: 1;
   float: left;
   text-align: center;
-  margin: .1em 2em 0em 1em; }
+  margin: 12em 2em 0em 1em;
+  animation: slide .7s; }
   .nav h3 {
     font-size: 1em;
     margin: 0; }
-  .nav h3, .nav h1 {
-    animation: fadeIn 2s; }
   .nav .icons {
     font-size: 1.2em;
     margin-top: 2em; }
@@ -44,7 +45,7 @@
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 3em;
+  padding-top: 1em;
   font-weight: bold;
   justify-content: flex-start; }
   .container md-content {
@@ -52,43 +53,64 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start; }
+    .container md-content pro1, .container md-content pro2, .container md-content pro3, .container md-content pro4 {
+      width: 100%;
+      margin: .5em;
+      position: relative;
+      top: 0; }
+    .container md-content pro1 {
+      animation: slideUp .4s; }
+    .container md-content pro2 {
+      animation: slideUp .7s; }
+    .container md-content pro3 {
+      animation: slideUp 1s; }
+    .container md-content pro4 {
+      animation: slideUp 1.2s; }
   .container cont-dir {
     width: 100%; }
   .container .home h4 {
-    padding: 0 6em; }
+    padding: 0 6.5em; }
   .container .last h3 {
     margin: 0em -.85em; }
   .container h4 {
     display: inline;
-    padding: 0 5em;
-    font-size: 1.4em; }
+    padding: 0 6em;
+    font-size: 2.3em; }
   .container h3 {
     display: none;
     font-size: 2em; }
   .container .home {
-    width: 40%;
+    width: 65%;
     height: 40%;
-    margin: .5em;
+    margin: .5em 1em;
     cursor: pointer;
-    border-radius: .4em; }
+    border-radius: .4em;
+    position: relative;
+    top: 0; }
   .container .about {
-    width: 40%;
+    width: 65%;
     height: 40%;
-    margin: .5em;
+    margin: .5em 1em;
     cursor: pointer;
-    border-radius: .4em; }
+    border-radius: .4em;
+    position: relative;
+    top: 0; }
   .container .resume {
-    width: 40%;
-    margin: .5em;
-    height: 40.5%;
+    width: 65%;
+    height: 40%;
+    margin: .5em 1em;
     cursor: pointer;
-    border-radius: .4em; }
+    border-radius: .4em;
+    position: relative;
+    top: 0; }
   .container .last {
-    width: 40%;
-    margin: .5em .5em 0 .5em;
-    height: 40.5%;
+    width: 65%;
+    height: 40%;
+    margin: .5em 1em;
     cursor: pointer;
-    border-radius: .4em; }
+    border-radius: .4em;
+    position: relative;
+    top: 0; }
 
 .home:hover {
   background: url("../assets/thing.png") no-repeat;
@@ -100,7 +122,7 @@
   .home:hover h3 {
     display: inline;
     background: white;
-    animation: slideIn .5s;
+    animation: label .5s;
     padding: .5em 1em; }
 
 .about:hover {
@@ -113,7 +135,7 @@
   .about:hover h3 {
     display: inline;
     background: white;
-    animation: slideIn .5s;
+    animation: label .5s;
     padding: .5em 1em; }
 
 .resume:hover {
@@ -126,7 +148,7 @@
   .resume:hover h3 {
     display: inline;
     background: white;
-    animation: slideIn .5s;
+    animation: label .5s;
     padding: .5em 1em; }
 
 .last:hover {
@@ -140,7 +162,7 @@
   .last:hover h3 {
     display: inline;
     background: white;
-    animation: slideIn .5s;
+    animation: label .5s;
     padding: .5em 1em; }
 
 /*# sourceMappingURL=style.css.map */
