@@ -5,16 +5,18 @@ app.config(function($stateProvider, $urlRouterProvider){
 
 	.state('home', {
 		url : '/home',
-		templateUrl: 'templates/home.html'
+		templateUrl: 'templates/about.html'
 	})
 	.state('about', {
 		url: '/about',
-		templateUrl: 'templates/about.html'
+		templateUrl: 'templates/content.html'
 	})
 	.state('resume',{
 		url: '/resume',
-		templateUrl: 'templates/resume.html'
+		templateUrl: 'templates/head.html'
 	});
+
+	$urlRouterProvider.when('','/home');
 
 });
 
