@@ -7,4 +7,4 @@
 <li> Grunt - Compiling for Production use </li>
 </ul>
 
-<h2>Work in Progress..</h2>
+<h2>Still in Development..</h2>
